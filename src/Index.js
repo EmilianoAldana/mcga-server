@@ -38,8 +38,6 @@ app.post("/login", (req, res) =>{
   })
 })
 
-app.listen(4000, () =>{
+app.listen(process.env.port || 4000, () =>{
   console.log("Servidor corriendo en el localhost 4000")
 } )
-
-/*CLASE 08/11*/
